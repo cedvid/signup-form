@@ -2,7 +2,7 @@
     --outer-bg-color: #ffffffd9;
     --main-bg-color: #fffffff0;
     --font-color: black;
-    --logo-txt-size: 1.5rem;
+    --logo-txt-size: 1rem;
     --logo-txt-font: 'Kavoon', cursive;
     --logo-txt-color: white;
     --logo-bg-color: rgba(0, 0, 0, 0.351);
@@ -42,6 +42,7 @@ main {
 .logo {
     display: flex;
     position: absolute;
+    padding: 1rem;
     gap: 0.5rem;
     background-color: var(--logo-bg-color);
     width: 100%;
@@ -62,16 +63,18 @@ a {
     color: var(--font-color);
 }
 .background-section a {
+    color: white;
+    font-size: 10px;
     position: absolute;
     bottom: 5px;
-    left: 10px;
+    left: 20px;
 }
 .form-section {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 3rem;
     border-radius: inherit;
     padding: 5rem;
@@ -89,9 +92,6 @@ fieldset {
     border: 1px solid rgb(186, 185, 185);
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgb(203, 201, 201);
-}
-fieldset div {
-    /* margin: 2rem; */
 }
 input {
     border-radius: 10px;
@@ -112,8 +112,10 @@ input, label {
     margin-top: 0;
 }
 footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
+    text-align: center;
 }
 footer img {
     height: 20px;
