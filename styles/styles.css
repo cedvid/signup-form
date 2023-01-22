@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Slabo+27px&display=swap');
+
+:root {
+    --main-bg-color: rgb(117, 117, 192);
+    --font-color: white;
+    --logo-txt-size: 50px;
+    --logo-txt-font: 'Kavoon', cursive;
+    --logo-bg-color: rgb(195, 195, 195);
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+.background-image {
+    position: relative;
+}
+.logo {
+    display: flex;
+    position: absolute;
+    background-color: var(--logo-bg-color);
+    width: 100%;
+    opacity: 0.5;
+    top: 30%;
+}
+.background-image a {
+    position: absolute;
+    top: 70%;
+    left: 100px;
+    color: white;
+}
+.logo-txt {
+    font-size: var(--logo-txt-size);
+    font-family: var(--logo-txt-font);
+    align-self: center;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
