@@ -6,41 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <section class="background-image">
-            <img src="image/doggie.png" alt="A picture of my doggie">
+        <section class="background-section">
+            <!-- <img src="image/doggie.png" class="bg-img" alt="A picture of my doggie"> -->
             <div class="logo">
-                <img src="image/dog.png" alt="dog logo">
-                <div class="logo-txt">Sign-up form</div>
+                <img src="image/happy.png" alt="dog logo">
+                <div class="logo-txt">Doggy Newsletter</div>
             </div>
-        <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">Dog icons created by deemakdaksina - Flaticon</a>
-        </section>
-        <section class="form-side">
-            <p class="description">This is not a real online service. You can try to fill the form below if you wish but it won't 
-            lead you anywhere! Although I have to admit, it is a beautiful form.</p>
+            <a href="https://www.flaticon.com/free-icons/dog" title="dog icons" target="_blank">Dog icon created by AomAm - Flaticon</a>       
+         </section>
+        <section class="form-section">
+            <p class="description"><u>This is not a real online service.</u><br>But if it was, 
+            I would ask you to enter your personal information in the form below.<br>
+            As a result, you would probably get access to some cool features.<br><br>But, it is not a real sign-up form.</p>
             <form>
                 <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
-                    <label for="last-name">Last Name</label>
-                    <input type="last-name" id="last-name" name="last-name" placeholder="Last Name" required />
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required />
-                    <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="number" placeholder="000 000 000" required />
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required />
-                    <label for="password-cnf">Confirm Password</label>
-                    <input type="password" id="password-cnf" name="password-cnf" required />
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
+                        <label for="last-name">Last Name</label>
+                        <input type="last-name" id="last-name" name="last-name" placeholder="Last Name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" placeholder="000 000 000" required />
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required />
+                        <label for="password-cnf">Confirm Password</label>
+                        <input type="password" id="password-cnf" name="password-cnf" required />
+                    </div>
                 </fieldset>
-                <input type="submit" value="Create Account" />
+                <input type="submit" class="submit-btn" value="Create Account" />
             </form>
             <div class="existing-account">
                 Already have an account? <a href="">Log in</a>
             </div>
+            <footer>Created by Cedric <a href="https://github.com/cedvid" target="_blank"><img src="image/github-mark.svg" alt="github logo"></a></footer>
         </section>
     </main>
 </body>
