@@ -36,8 +36,12 @@
 
 .form h1 {
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     position: relative;
+}
+
+.form p {
+    font-size: 12px;;
 }
 
 .form h1::after {

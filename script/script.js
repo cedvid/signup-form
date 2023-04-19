@@ -4,6 +4,7 @@ const nameField = document.getElementById("nameField");
 const title = document.getElementById("title");
 const forgetPwd = document.getElementById("forgetPwd");
 const confPwd = document.getElementById("confPwd");
+const description = document.getElementById("description");
 
 signinBtn.addEventListener("click", function() {
     nameField.style.maxHeight = "0";
@@ -12,6 +13,7 @@ signinBtn.addEventListener("click", function() {
     signupBtn.classList.add("disabled");
     signinBtn.classList.remove("disabled");
     confPwd.classList.add("display-off");
+    description.style.display = "none";
 });
 
 signupBtn.addEventListener("click", function() {
@@ -21,5 +23,6 @@ signupBtn.addEventListener("click", function() {
     signupBtn.classList.remove("disabled");
     forgetPwd.style.display = "none";
     confPwd.classList.remove("display-off");
+    description.style.display = "block";
 });
   
