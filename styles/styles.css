@@ -1,11 +1,15 @@
 :root {
+    --font: 'Merriweather', serif;
     --green-bg: rgba(7, 189, 126, 0.6);
+    --button-color: rgba(11, 136, 92, 0.6);
+    --link-color: rgb(2, 85, 2);
+    --input-bg: rgb(237, 237, 237);
   }  
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font);
     box-sizing: border-box;
 }
 
@@ -16,4 +20,93 @@
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.form {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFF;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #000000;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.input-field {
+    background: var(--input-bg);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: var(--button-color);
+    color: #ffffff;
+    height: 48px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 280px;
+}
+
+.btn-field button.disabled {
+    background: var(--input-bg);
+    color: #838383;
 }
