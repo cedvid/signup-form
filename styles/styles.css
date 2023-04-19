@@ -64,6 +64,9 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
 }
 
 input {
@@ -109,4 +112,8 @@ form p a {
 .btn-field button.disabled {
     background: var(--input-bg);
     color: #838383;
+}
+
+#forgetPwd {
+    display: none;
 }
