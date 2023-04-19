@@ -1,123 +1,19 @@
 :root {
-    --outer-bg-color: #ffffffd9;
-    --main-bg-color: #fffffff0;
-    --font-color: black;
-    --logo-txt-size: 1rem;
-    --logo-txt-font: 'Kavoon', cursive;
-    --logo-txt-color: white;
-    --logo-bg-color: rgba(0, 0, 0, 0.351);
-    --form-txt-font: 'Merriweather Sans', sans-serif;
-    --description-txt-size: 1rem;
-    --form-txt-size: 1rem;
-}
+    --green-bg: rgba(7, 189, 126, 0.6);
+  }  
+
 * {
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-}
-html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
 }
-body {
-    min-height: 100%;
-}
-main {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--main-bg-color);
-    width: auto;
-    height: 90vh;
-    margin: 2rem;
-    border-radius: 25px;
-    box-shadow: 10px 5px 5px rgba(181, 180, 180, 0.471);
-}
-.background-section {
-    background-image: url("../image/doggie.png");
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(var(--green-bg), var(--green-bg)), url(/image/background.jpg);
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 20%;
     position: relative;
-    border-radius: inherit;
-}
-.logo {
-    display: flex;
-    position: absolute;
-    padding: 1rem;
-    gap: 0.5rem;
-    background-color: var(--logo-bg-color);
-    width: 100%;
-    top: 30%;
-    opacity: 0.8;
-}
-.logo-txt {
-    color: var(--logo-txt-color);
-    font-size: var(--logo-txt-size);
-    font-family: var(--logo-txt-font);
-    align-self: center;
-}
-.logo img {
-    width: 70px;
-    height: auto;
-}
-a {
-    color: var(--font-color);
-}
-.background-section a {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-}
-.form-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 3rem;
-    border-radius: inherit;
-    padding: 5rem;
-    background-color: var(--main-bg-color);
-    color: var(--font-color);
-    font-family: var(--form-txt-font);
-    font-size: var(--form-txt-size);
-}
-.description {
-    font-size: var(--description-txt-size);
-    font-weight: bold;
-    /* margin-bottom: 2rem; */
-}
-fieldset {
-    border: 1px solid rgb(186, 185, 185);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px rgb(203, 201, 201);
-}
-input {
-    border-radius: 10px;
-}
-input, label {
-    display: block;
-}
-.submit-btn {
-    font-family: var(--form-txt-font);
-    font-size: var(--form-txt-size);
-    background-color: white;
-}
-.submit-btn:hover {
-    background-color: black;
-    color:white;
-}
-.existing-account {
-    margin-top: 0;
-}
-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-}
-footer img {
-    height: 20px;
-    width: auto;
 }
