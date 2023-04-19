@@ -19,29 +19,30 @@
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <img src="image/account.svg" alt="icon">
-                        <input type="text" placeholder="Name">                        
+                        <input type="text" placeholder="Name" required>                        
                     </div>
                     <div class="input-field">
                         <img src="image/email.svg" alt="icon">
-                        <input type="email" placeholder="Email">                        
+                        <input type="email" placeholder="Email" required>                        
                     </div>
                     <div class="input-field">
                         <img src="image/lock.svg" alt="icon">
-                        <input type="password" placeholder="Password">                        
+                        <input type="password" placeholder="Password" required onfocus="showPasswordRequirements()">      
                     </div>
-                    <!-- <div class="input-field">
+                    <div id="confPwd" class="input-field">
                         <img src="image/lock.svg" alt="icon">
-                        <input type="password" placeholder="Confirm Password">                        
-                    </div> -->
+                        <input type="password" placeholder="Confirm Password" required>                        
+                    </div>
                     <p id="forgetPwd">Forgot your password? <a href="#"><b>Click Here</b></a></p>
                 </div>
                 <div class="btn-field">
-                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="submit" id="signupBtn">Sign up</button>
                     <button type="button" id="signinBtn" class="disabled">Sign in</button>
                 </div>
             </form>
         </div>
     </div>
     <!-- Image by <a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849804">StartupStockPhotos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=849804">Pixabay</a> -->
+    <footer>Created by Cédric <a href="https://github.com/cedvid" target="_blank"><img id="gh-icon" src="image/github-mark.svg" alt="github logo"></a></footer>
 </body>
 </html>

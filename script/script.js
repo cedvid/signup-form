@@ -3,6 +3,7 @@ const signinBtn = document.getElementById("signinBtn");
 const nameField = document.getElementById("nameField");
 const title = document.getElementById("title");
 const forgetPwd = document.getElementById("forgetPwd");
+const confPwd = document.getElementById("confPwd");
 
 signinBtn.addEventListener("click", function() {
     nameField.style.maxHeight = "0";
@@ -10,6 +11,7 @@ signinBtn.addEventListener("click", function() {
     forgetPwd.style.display = "block";
     signupBtn.classList.add("disabled");
     signinBtn.classList.remove("disabled");
+    confPwd.classList.add("display-off");
 });
 
 signupBtn.addEventListener("click", function() {
@@ -18,4 +20,6 @@ signupBtn.addEventListener("click", function() {
     signinBtn.classList.add("disabled");
     signupBtn.classList.remove("disabled");
     forgetPwd.style.display = "none";
+    confPwd.classList.remove("display-off");
 });
+  
